@@ -34,8 +34,9 @@
   <p class="updated">Last updated: 14 June 2026</p>
 
   <div class="highlight">
-    <strong>Short version:</strong> Veil collects nothing. Your microphone audio and your
-    scripts never leave your Mac. There is no account, no server, and no analytics.
+    <strong>Short version:</strong> Veil collects nothing. Your scripts never leave your Mac,
+    and speech is recognised on-device whenever a model is available (with a strict offline
+    mode). There is no account, no server of ours, and no analytics.
   </div>
 
   <h2>Data we collect</h2>
@@ -43,10 +44,13 @@
      The app makes no network requests of its own.</p>
 
   <h2>Microphone &amp; speech recognition</h2>
-  <p>In Voice mode, Veil uses Apple’s on-device Speech framework to follow your script as you
-     speak. Audio is processed locally on your Mac. Veil offers a strict
-     “on-device only” mode that disables any speech fallback that would use the internet.
-     Veil never records, saves, or sends your audio anywhere.</p>
+  <p>In Voice mode, Veil uses Apple’s Speech framework to follow your place in the script.
+     It prefers on-device recognition, so your audio stays on your Mac. If your chosen
+     language has no on-device model, recognition falls back to Apple’s speech service to
+     transcribe — unless you enable the strict “on-device only” mode, which disables that
+     fallback entirely and keeps everything offline. Veil itself never records, stores, or
+     sends your audio to any server of ours; any transcription that does occur is handled by
+     Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
   <h2>Your scripts &amp; settings</h2>
   <p>The text you write and your preferences are stored locally in the app’s own sandbox
